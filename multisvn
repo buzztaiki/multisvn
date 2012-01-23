@@ -2,7 +2,7 @@
 
 from optparse import OptionParser
 from ConfigParser import ConfigParser
-import os, subprocess
+import os
 
 def get_option(config, option):
     """
@@ -51,4 +51,4 @@ config = ConfigParser()
 config.read(os.path.expanduser('~/.subversion/config'))
 
 svn = guess_svn(config, find_dotsvn(os.getcwd()))
-os.sys.exit(subprocess.call([svn] + os.sys.argv[1:]))
+os.execv(svn, [svn] + os.sys.argv[1:])
