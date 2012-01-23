@@ -24,4 +24,4 @@ Installation
 Usage
 -----
 
-Run `multisvn` instead of a `svn`. You also create an alias for `multisvn`.
+Run `multisvn` instead of a `svn`. You can also rename `multisvn` to `svn` for nomally use.
